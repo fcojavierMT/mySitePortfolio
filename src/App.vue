@@ -1,12 +1,22 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <NavBar></NavBar>
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+import NavBar from '@/components/NavBar.vue';
+
+export default {
+  components: {
+    NavBar
+  }
+}
+</script>
+
 
 <style lang="scss">
 @import './scss/main.scss';
@@ -15,7 +25,6 @@
   font-family: 'Raleway';
   text-align: center;
   font-weight: 600;
-  padding: 20px;
 }
 
 </style>
