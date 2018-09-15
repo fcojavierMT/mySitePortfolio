@@ -1,16 +1,19 @@
 <template>
-  <b-container fluid 
-               class="p-4 bg-dark">
-    <b-row>
-      <b-col>
-        <b-img thumbnail rounded fluid 
-               width="120" 
-               height="120" 
-               :src="require('../assets/imgs/profile.jpg')" 
-               alt="Thumbnail" />
-      </b-col>
-    </b-row>
-  </b-container>
+  <div>
+    <b-navbar toggleable>
+      <b-navbar-toggle target="nav_dropdown_collapse"></b-navbar-toggle>
+      <b-collapse is-nav id="nav_dropdown_collapse">
+        <b-navbar-nav>
+          <b-nav-item href="#">
+            <router-link to="home">Home</router-link>
+          </b-nav-item>
+          <b-nav-item href="#">
+            <router-link to="about">About</router-link>
+          </b-nav-item>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
+  </div>
 </template>
 
 <script>
@@ -19,7 +22,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 </style>
 

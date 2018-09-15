@@ -1,6 +1,6 @@
 <template>
-  <div class="welcome-page">
-    Bienvenidos a mi sitio web
+  <div class="welcome">
+
   </div>
 </template>
 
@@ -11,5 +11,7 @@ export default {
 </script>
 
 <style lang="scss">
-
+  .welcome-text {
+    padding: 20px;
+  }
 </style>
