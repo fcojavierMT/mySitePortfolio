@@ -14,9 +14,9 @@
     </b-container>
     <div class="about animated fadeInUp">
       <p>{{$t('introduction')}} <b>{{$t('name')}}</b> {{$t('call')}}</p>
-      <p>And im a Junior Programmer, focused on web technologies as JavaScript, HTML, CSS...etc</p>
-      <p>Im currently Working as a Frontend Developer, on Valencia (Spain)</p>
-      <h4><strong>Some of my works</strong></h4>
+      <p>{{$t('func')}}</p>
+      <p>{{$t('currently')}}</p>
+      <h4><strong>{{$t('someWorks')}}</strong></h4>
     </div>
     <b-container fluid class="animated fadeIn slower">
       <b-tabs>

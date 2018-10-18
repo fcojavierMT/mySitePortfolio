@@ -10,6 +10,9 @@
           <b-nav-item href="#">
             <router-link to="about">About</router-link>
           </b-nav-item>
+          <b-nav-item href="#">
+            <b-button>Idiomas</b-button>
+          </b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
