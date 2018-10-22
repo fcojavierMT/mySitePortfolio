@@ -11,6 +11,11 @@
                 alt="Thumbnail" />
         </b-col>
       </b-row>
+      <b-row>
+        <b-col>
+          <select-bar v-on:language="change"></select-bar>
+        </b-col>
+      </b-row>
     </b-container>
     <div class="about animated fadeInUp">
       <p>{{$t('introduction')}} <b>{{$t('name')}}</b> {{$t('call')}}</p>
@@ -55,8 +60,23 @@
 </style>
 
 <script>
+import selectBar from '../components/selectBar.vue';
+import i18n from '../main.js';
 export default {
   name: 'home',
+  methods: {
+    change: function ($event) {
+      console.log($event);
+      if ($event === 'en') {
+        this.$i18n.locale = 'en';
+      } else {
+        this.$i18n.locale = 'es';
+      }
+    }
+  },
+  components: {
+    selectBar
+  }
 }
 </script>
 
