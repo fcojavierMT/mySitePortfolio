@@ -16,7 +16,8 @@ export const i18n = new VueI18n ({
       call: ', but people usually call me  "Talavera"',
       func: 'And im a Junior Programmer, focused on web technologies as JavaScript, HTML, CSS, JS ...etc',
       currently: 'Im currently Working as a Frontend Developer, on Valencia (Spain)',
-      someWorks: 'Some of my works'
+      someWorks: 'Some of my works',
+      firstProject: 'My first project. A simple web to put notes, with login page made with firebase'
     },
     es : {
       introduction: 'Hola!, mi nombre es',
@@ -24,7 +25,8 @@ export const i18n = new VueI18n ({
       call: ', pero la gente me suele llamar por mi apellido "Talavera"',
       func: 'Soy un Programador Junior, y actualmente estoy centrado en las tecnologías web como, HTML, CSS, JS...',
       currently: 'Actualmente estoy trabajando como un desarrollador FrontEnd, en Valencia (España)',
-      someWorks: 'Aquí algunos de mis trabajos'
+      someWorks: 'Aquí algunos de mis trabajos',
+      firstProject: 'Mi primer proyeto. Una web simple donde poner notas, con un login desarrollado con firebase'
     }
   }
 })

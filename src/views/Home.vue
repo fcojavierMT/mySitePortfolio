@@ -35,7 +35,7 @@
                   alt="Thumbnail" />
           </a>
           <b-card-footer>
-            My first project. A simple web to put notes, with login page made with firebase
+            {{$t('firstProject')}}
           </b-card-footer>
         </b-tab>
       </b-tabs>
@@ -62,11 +62,11 @@
 <script>
 import selectBar from '../components/selectBar.vue';
 import i18n from '../main.js';
+
 export default {
   name: 'home',
   methods: {
     change: function ($event) {
-      console.log($event);
       if ($event === 'en') {
         this.$i18n.locale = 'en';
       } else {
