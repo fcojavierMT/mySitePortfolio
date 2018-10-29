@@ -5,8 +5,8 @@
       <b-row>
         <b-col class="animated jackInTheBox slower">
           <b-img thumbnail rounded fluid
-                width="120"
-                height="120"
+                width="200"
+                height="200"
                 :src="require('../assets/imgs/profile.jpg')"
                 alt="Thumbnail" />
         </b-col>
@@ -61,7 +61,6 @@
 
 <script>
 import selectBar from '../components/selectBar.vue';
-import i18n from '../main.js';
 
 export default {
   name: 'home',

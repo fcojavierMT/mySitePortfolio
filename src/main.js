@@ -26,7 +26,7 @@ export const i18n = new VueI18n ({
       func: 'Soy un Programador Junior, y actualmente estoy centrado en las tecnologías web como, HTML, CSS, JS...',
       currently: 'Actualmente estoy trabajando como un desarrollador FrontEnd, en Valencia (España)',
       someWorks: 'Aquí algunos de mis trabajos',
-      firstProject: 'Mi primer proyeto. Una web simple donde poner notas, con un login desarrollado con firebase'
+      firstProject: 'Mi primer proyecto. Una web simple donde poner notas, con un login desarrollado con firebase'
     }
   }
 })
