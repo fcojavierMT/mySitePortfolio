@@ -1,15 +1,8 @@
 <template>
   <div>
-    <b-container fluid
-                 class="p-4 bg-dark animated slideInLeft">
+    <b-container fluid class="p-4 animated slideInLeft header-container">
       <b-row>
-        <b-col class="animated jackInTheBox slower">
-          <b-img thumbnail rounded fluid
-                width="200"
-                height="200"
-                :src="require('../assets/imgs/profile.jpg')"
-                alt="Thumbnail" />
-        </b-col>
+        <b-col class="animated jackInTheBox slower"></b-col>
       </b-row>
       <b-row>
         <b-col>
@@ -18,28 +11,14 @@
       </b-row>
     </b-container>
     <div class="about animated fadeInUp">
-      <p>{{$t('introduction')}} <b>{{$t('name')}}</b> {{$t('call')}}</p>
+      <p>
+        {{$t('introduction')}}
+        <b>{{$t('name')}}</b>
+        {{$t('call')}}
+      </p>
       <p>{{$t('func')}}</p>
       <p>{{$t('currently')}}</p>
-      <h4><strong>{{$t('someWorks')}}</strong></h4>
     </div>
-    <b-container fluid class="animated fadeIn slower">
-      <b-tabs>
-        <b-tab no-body title="Vue+Firebase" active>
-          <a href="https://fcojaviermt.github.io/#/" target="_blank">
-            <b-img class="card-image"
-                  rounded fluid
-                  width="150"
-                  height="150"
-                  :src="require('../assets/imgs/firebaseVue.png')"
-                  alt="Thumbnail" />
-          </a>
-          <b-card-footer>
-            {{$t('firstProject')}}
-          </b-card-footer>
-        </b-tab>
-      </b-tabs>
-    </b-container>
   </div>
 </template>
 
@@ -57,25 +36,33 @@
     cursor: pointer;
     margin: 30px;
   }
+
+  .header-container {
+    height: 500px;
+    background-image: url("../assets/imgs/everest.png");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 45%;
+  }
 </style>
 
 <script>
-import selectBar from '../components/selectBar.vue';
+import selectBar from "../components/selectBar.vue";
 
 export default {
-  name: 'home',
+  name: "home",
   methods: {
-    change: function ($event) {
-      if ($event === 'en') {
-        this.$i18n.locale = 'en';
+    change: function($event) {
+      if ($event.lang === "en") {
+        this.$i18n.locale = "en";
       } else {
-        this.$i18n.locale = 'es';
+        this.$i18n.locale = "es";
       }
     }
   },
   components: {
     selectBar
   }
-}
+};
 </script>
 
