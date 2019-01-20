@@ -19,22 +19,22 @@ export default {
         {
           value: "es",
           text: "Español",
-          image: "../assets/imgs/languagesIcon/spanish.png"
+          image: "spanish"
         },
         {
           value: "en",
           text: "English",
-          image: "../assets/imgs/languagesIcon/english.png"
+          image: "english"
         }
       ]
     };
   },
   methods: {
     changeLanguage: function() {
-      const imageSelected = this.options.filter(option => {
+      const imageSelected = this.options.find(option => {
         return option.value === this.selected;
       });
-      this.$emit("language", { lang: this.selected, image: imageSelected});
+      this.$emit("language", { lang: this.selected, property: imageSelected});
     }
   }
 };
